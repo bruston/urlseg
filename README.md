@@ -12,3 +12,11 @@ https://www.example.com/foo/bar
 ```
 
 Outputs to stdout.
+
+## Example Usage
+
+```
+echo "https://www.example.com/foo/bar/baz.js" | urlseg
+
+cat urls.txt | urlseg
+```
