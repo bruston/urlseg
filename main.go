@@ -24,13 +24,12 @@ func paths(u string) []string {
 	if err != nil {
 		return nil
 	}
-	u = strings.TrimPrefix(u, purl.Scheme+"://")
 	split := strings.Split(purl.RequestURI(), "/")
 	if len(split) < 2 {
 		return []string{u}
 	}
 	urls := make([]string, 0, len(split)+1)
-	urls = append(urls, purl.Scheme+"://"+u)
+	urls = append(urls, u)
 	newURL := purl.Scheme + "://" + purl.Host
 	for i := range split {
 		if i == len(split)-1 {
