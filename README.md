@@ -1,4 +1,4 @@
-Expands a list of urls into their individual uri elements.
+Expands a list of urls into their individual uri elements. Takes input from stdin.
 
 So: https://www.example.com/foo/bar/baz.js
 
