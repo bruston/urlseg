@@ -11,4 +11,4 @@ https://www.example.com/foo
 https://www.example.com/foo/bar
 ```
 
-Outputs to stdin.
+Outputs to stdout.
